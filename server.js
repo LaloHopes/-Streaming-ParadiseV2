@@ -13,6 +13,10 @@ const offerRoutes = require('./routes/offerRoutes');
 const roleRoutes = require('./routes/roleRoutes'); // Importar rutas de roles
 const permissionRoutes = require('./routes/permissionRoutes'); // Importar rutas de permisos
 const rolePermissionRoutes = require('./routes/rolePermissionRoutes'); // Importar rutas de Role-Permiso
+const paymentRoutes = require('./routes/paymentRoutes'); // Importa la ruta
+
+
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -39,6 +43,7 @@ app.use('/offers', offerRoutes);
 app.use('/roles', roleRoutes); // Usa las rutas de roles
 app.use('/permissions', permissionRoutes); // Usa las rutas de permisos
 app.use('/role-permission', rolePermissionRoutes); // Usa las rutas de Role-Permiso
+app.use('/payments', paymentRoutes); // Usa la ruta
 
 
 
